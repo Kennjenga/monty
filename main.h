@@ -51,28 +51,28 @@ unsigned int token_arr_len(void);
 int run_monty(FILE *script_fd);
 void set_op_tok_error(int error_code);
 
-/* OPCODE FUNCTIONS */
-void monty_push(stack_t **stack, unsigned int line_number);
-void monty_pall(stack_t **stack, unsigned int line_number);
-void monty_pint(stack_t **stack, unsigned int line_number);
-void monty_pop(stack_t **stack, unsigned int line_number);
-void monty_swap(stack_t **stack, unsigned int line_number);
-void monty_add(stack_t **stack, unsigned int line_number);
-void monty_nop(stack_t **stack, unsigned int line_number);
-void monty_sub(stack_t **stack, unsigned int line_number);
-void monty_div(stack_t **stack, unsigned int line_number);
-void monty_mul(stack_t **stack, unsigned int line_number);
-void monty_mod(stack_t **stack, unsigned int line_number);
-void monty_pchar(stack_t **stack, unsigned int line_number);
-void monty_pstr(stack_t **stack, unsigned int line_number);
-void monty_rotl(stack_t **stack, unsigned int line_number);
-void monty_rotr(stack_t **stack, unsigned int line_number);
-void monty_stack(stack_t **stack, unsigned int line_number);
-void monty_queue(stack_t **stack, unsigned int line_number);
-
 /* CUSTOM STANDARD LIBRARY FUNCTIONS */
 char **strtow(char *str, char *delims);
 char *get_int(int n);
+
+/* OPCODE FUNCTIONS */
+void op_push(stack_t **stack, unsigned int line_number);
+void op_pall(stack_t **stack, unsigned int line_number);
+void op_pint(stack_t **stack, unsigned int line_number);
+void op_pop(stack_t **stack, unsigned int line_number);
+void op_swap(stack_t **stack, unsigned int line_number);
+void op_add(stack_t **stack, unsigned int line_number);
+void op_nop(stack_t **stack, unsigned int line_number);
+void op_sub(stack_t **stack, unsigned int line_number);
+void op_div(stack_t **stack, unsigned int line_number);
+void op_mul(stack_t **stack, unsigned int line_number);
+void op_mod(stack_t **stack, unsigned int line_number);
+void op_pchar(stack_t **stack, unsigned int line_number);
+void op_pstr(stack_t **stack, unsigned int line_number);
+void op_rotl(stack_t **stack, unsigned int line_number);
+void op_rotr(stack_t **stack, unsigned int line_number);
+void op_stack(stack_t **stack, unsigned int line_number);
+void op_queue(stack_t **stack, unsigned int line_number);
 
 /* ERROR MESSAGES & ERROR CODES */
 int usage_error(void);
