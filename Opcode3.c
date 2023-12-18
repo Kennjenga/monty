@@ -1,5 +1,9 @@
 #include "main.h"
 
+void op_nop(stack_t **stack, unsigned int line_number);
+void op_pchar(stack_t **stack, unsigned int line_number);
+void op_pstr(stack_t **stack, unsigned int line_number);
+
 /**
  * op_nop - Does absolutely nothing for the Monty opcode 'nop'.
  * @stack: A pointer to the top mode node of a stack_t linked list.
