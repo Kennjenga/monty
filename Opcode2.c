@@ -1,5 +1,11 @@
 #include "main.h"
 
+void op_add(stack_t **stack, unsigned int line_number);
+void op_sub(stack_t **stack, unsigned int line_number);
+void op_div(stack_t **stack, unsigned int line_number);
+void op_mul(stack_t **stack, unsigned int line_number);
+void op_mod(stack_t **stack, unsigned int line_number);
+
 /**
  * op_add - Adds the top two values of a stack_t linked list.
  * @stack: A pointer to the top mode node of a stack_t linked list.
