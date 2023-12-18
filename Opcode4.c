@@ -1,5 +1,10 @@
 #include "main.h"
 
+void op_rotl(stack_t **stack, unsigned int line_number);
+void op_rotr(stack_t **stack, unsigned int line_number);
+void op_stack(stack_t **stack, unsigned int line_number);
+void op_queue(stack_t **stack, unsigned int line_number);
+
 /**
  * op_rotl - Rotates the top value of a stack_t linked list to the bottom.
  * @stack: A pointer to the top mode node of a stack_t linked list.
