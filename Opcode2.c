@@ -120,3 +120,4 @@ void op_mod(stack_t **stack, unsigned int line_number)
 
 	(*stack)->next->next->n %= (*stack)->next->n;
 	op_pop(stack, line_number);
+}
